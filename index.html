@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eduardo Carvalho | Barbearia</title>
+
+    <meta name="description"
+        content="Agende seu horário com Eduardo Carvalho. Escolha seu corte, horário e local e envie seu agendamento pelo WhatsApp.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+
+            <a href="#inicio" class="logo">
+                EDUARDO<span>.</span>
+            </a>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#agendamento">Agendar</a>
+                <a href="#instagram">Instagram</a>
+            </nav>
+
+            <a href="#agendamento" class="header-btn">
+                Agendar
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    BARBEARIA • ESTILO • PRECISÃO
+                </span>
+
+                <h1>
+                    Seu estilo começa
+                    <span>no corte.</span>
+                </h1>
+
+                <p>
+                    Corte, barba e estilo feitos para você.
+                    Agende seu horário com Eduardo Carvalho
+                    de forma rápida e simples.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#agendamento" class="btn">
+                        AGENDAR HORÁRIO
+                    </a>
+
+                    <a href="#servicos" class="btn btn-outline">
+                        VER SERVIÇOS
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+                <div class="gold-circle"></div>
+                <div class="scissors">✂</div>
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="services" id="servicos">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>SERVIÇOS</span>
+
+                    <h2>Escolha seu estilo</h2>
+
+                    <p>
+                        Encontre o serviço ideal para renovar seu visual.
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            ✂️
+                        </div>
+
+                        <h3>Corte de Cabelo</h3>
+
+                        <p>
+                            Corte personalizado de acordo
+                            com seu estilo e preferência.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card featured">
+
+                        <div class="service-icon">
+                            💈
+                        </div>
+
+                        <h3>Corte + Barba</h3>
+
+                        <p>
+                            Um atendimento completo para
+                            renovar totalmente seu visual.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🪒
+                        </div>
+
+                        <h3>Barba</h3>
+
+                        <p>
+                            Acabamento, alinhamento e cuidado
+                            para deixar sua barba impecável.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDAMENTO -->
+        <section class="booking" id="agendamento">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>AGENDAMENTO</span>
+
+                    <h2>Marque seu horário</h2>
+
+                    <p>
+                        Preencha os dados e envie seu agendamento
+                        diretamente pelo WhatsApp.
+                    </p>
+
+                </div>
+
+
+                <div class="booking-box">
+
+                    <form id="bookingForm">
+
+                        <div class="form-group">
+
+                            <label for="nome">
+                                Seu nome
+                            </label>
+
+                            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="data">
+                                    Data
+                                </label>
+
+                                <input type="date" id="data" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="hora">
+                                    Horário
+                                </label>
+
+                                <input type="time" id="hora" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="servico">
+                                Qual serviço você deseja?
+                            </label>
+
+                            <select id="servico" required>
+
+                                <option value="">
+                                    Selecione um serviço
+                                </option>
+
+                                <option value="Corte de cabelo">
+                                    ✂️ Corte de cabelo
+                                </option>
+
+                                <option value="Corte + barba">
+                                    💈 Corte + barba
+                                </option>
+
+                                <option value="Barba">
+                                    🪒 Barba
+                                </option>
+
+                                <option value="Outro">
+                                    Outro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Onde será o atendimento?
+                            </label>
+
+
+                            <div class="location-options">
+
+                                <div class="location-option">
+
+                                    <input type="radio" name="local" id="barbearia" value="Na barbearia" checked>
+
+                                    <label for="barbearia">
+
+                                        <span>💈</span>
+
+                                        Na barbearia
+
+                                    </label>
+
+                                </div>
+
+
+                                <div class="location-option">
+
+                                    <input type="radio" name="local" id="casa" value="Em casa">
+
+                                    <label for="casa">
+
+                                        <span>🏠</span>
+
+                                        Em casa
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="home-address" id="homeAddress">
+
+                                <label for="endereco">
+                                    Endereço do atendimento
+                                </label>
+
+                                <input type="text" id="endereco" placeholder="Rua, número, bairro...">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="observacao">
+                                Qual corte você quer?
+                            </label>
+
+                            <textarea id="observacao" rows="4"
+                                placeholder="Ex: Degradê baixo, americano, navalhado..."></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn submit-btn">
+                            📱 ENVIAR PARA O WHATSAPP
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INSTAGRAM -->
+        <section class="instagram" id="instagram">
+
+            <div class="container">
+
+                <span class="instagram-label">
+                    ACOMPANHE MEU TRABALHO
+                </span>
+
+                <h2>
+                    Siga no Instagram
+                </h2>
+
+                <p>
+                    Confira meus cortes, trabalhos e novidades.
+                </p>
+
+                <a href="https://www.instagram.com/Eduardo_carvalho_336/" target="_blank" class="instagram-link">
+                    @Eduardo_carvalho_336
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                EDUARDO<span>.</span>
+            </div>
+
+            <p>
+                © 2026 Eduardo Carvalho.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/555182199641" target="_blank" class="whatsapp" aria-label="WhatsApp">
+        <span>☎</span>
+    </a>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
